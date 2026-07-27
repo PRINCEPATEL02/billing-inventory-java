@@ -81,3 +81,4 @@ frontend/.env.local
 # ===============================
 *.tmp
 *.temp
+.env.example
