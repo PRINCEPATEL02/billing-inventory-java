@@ -1,0 +1,83 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+uploads/
+
+# ===============================
+# OS Files
+# ===============================
+.DS_Store
+Thumbs.db
+
+# ===============================
+# VS Code
+# ===============================
+.vscode/
+*.code-workspace
+
+# ===============================
+# IntelliJ / Eclipse
+# ===============================
+.idea/
+*.iml
+.settings/
+.project
+.classpath
+
+# ===============================
+# Backend (Spring Boot)
+# ===============================
+backend/target/
+backend/.mvn/wrapper/maven-wrapper.jar
+*.log
+
+# Environment files
+backend/.env
+backend/application-local.properties
+
+# ===============================
+# Frontend (React/Vite)
+# ===============================
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+
+# ===============================
+# Database
+# ===============================
+*.db
+*.sqlite
+
+# ===============================
+# Temporary
+# ===============================
+*.tmp
+*.temp

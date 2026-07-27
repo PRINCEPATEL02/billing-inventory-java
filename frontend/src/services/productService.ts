@@ -1,0 +1,11 @@
+import api from './api'
+export const getProducts = () => api.get('/products').then(r => r.data.data)
+export const getProduct = (id: number) => api.get(`/products/${id}`).then(r => r.data.data)
+export const getByBarcode = (barcode: string) => api.get(`/products/barcode/${barcode}`).then(r => r.data.data)
+export const searchProducts = (q: string) => api.get(`/products/search?q=${q}`).then(r => r.data.data)
+export const createProduct = (data: any) => api.post('/products', data).then(r => r.data.data)
+export const updateProduct = (id: number, data: any) => api.put(`/products/${id}`, data).then(r => r.data.data)
+export const deleteProduct = (id: number) => api.delete(`/products/${id}`).then(r => r.data)
+export const getLowStock = () => api.get('/products/low-stock').then(r => r.data.data)
+export const getProductQrCode = (id: number) => api.get(`/products/${id}/qr`).then(r => r.data.data)
+export const generateAllQrCodes = () => api.post('/products/generate-all-qr').then(r => r.data.data)
